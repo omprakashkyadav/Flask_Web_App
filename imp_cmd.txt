@@ -1,0 +1,10 @@
+install: install virtualenv
+create: virtualenv env
+activate: env\scripts\activate.bat
+	      env\Scripts\Activate.ps1
+
+Environment Variable: set FLASK_APP=main.py (Wnodows)
+					  export FLASK_APP=main.py (Mac or Linux)
+
+Debug Mode: set FLASK_DEBUG=1 (Windows)
+			export FLASK_DEBUG (Mac or Linux)
